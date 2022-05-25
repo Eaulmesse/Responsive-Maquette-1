@@ -1,0 +1,3 @@
+La police utilisée est Yanone Kaffeesatz,
+
+elle est disponible dans les google fonts.
