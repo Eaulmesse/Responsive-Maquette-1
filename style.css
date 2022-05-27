@@ -184,8 +184,11 @@ body {
 
 /* CARD SECTION */
 
-.card-section {
+.card-bg {
     background-image: url(./images/assets/bg04.png);
+}
+
+.card-section {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -283,8 +286,13 @@ body {
 
 /* FOOTER */
 
-.info-footer {
+.bg-footer {
     background-image: url(./images/assets/bg03.jpg);
+}
+
+.flex-footer {
+    display: flex;
+    flex-direction: column;
 }
 
 .speech-footer {
@@ -372,23 +380,20 @@ body {
 
     .navbar-title {
         margin: 0;
-
     } 
-
-
 
     .navbar-list-desktop {
         display: flex;
         align-items: center;
+        justify-content: end;
         list-style-type: none;
         color: white;
         font-size: 1.4rem;
         cursor: pointer;
-        margin-right: 15%;
     }
 
     .navbar-list-desktop li {
-        margin-left: 8%;
+        margin-left: 20%;
     }
 
     /* SPEECH */
@@ -410,20 +415,21 @@ body {
 
     .speech-text {
         text-align: left;
-
     }
 
     .speech-button button {
         height: 50px;
         width: 60%;
-        font-size: 1.8rem;
-        cursor: pointer;
-       
     }
 
     .speech-img {
-        margin-top: 0%;
+        margin: 2% 0;
         width: 50%;
+    }
+
+    .speech-img img{
+        width: 100%;
+        border: 10px solid #f1f1f1ff;
     }
 
     /* MAIN */
@@ -436,6 +442,97 @@ body {
     .bloc-info {
         margin: 0 2%;
     }
+
+    /* CARD */
+
+    .card-bg {
+        display: flex;
+        justify-content: center;
+    }
+
+    .card-section {
+        flex-direction: row;
+        width: 80%;
+    }
+
+    .card-bloc {
+        height: 80%;
+        margin: 5% 1%;
+        padding: 2% 2%;
+    }
+
+    .card-list li {
+        font-size: 1.1rem;
+        margin: 5% 0%;
+    }
+
+    .card-comment-bloc {
+        padding-top: 0%;
+    }
+
+    .card-comment-contact {
+        margin-left: 10%;
+        margin-top: 0%;
+    }
+
+
+    /* FOOTER */
+
+
+    .flex-footer {
+        flex-direction: row-reverse;
+    }
+
+    .link-footer {
+        padding: 5% 5%;
+    }
+
+    .link-footer-bloc {
+        display: flex;
+    }
+
+    
+    .link-footer-bloc ul {
+        margin-right: 5%;
+    }
+
+    .link-footer-bloc li {
+        margin-top: 5%;
+    }
+
+    .link-footer-bloc hr {
+        width: 80%;
+    }
+
+    .speech-footer {
+        margin: 0;
+        margin-top: 5%;
+    }
+
+    .speech-footer p {
+        margin-right: 10%;
+        margin-top: 3%;
+    }
+
 }
+
+
+@media screen and (min-width: 1140px) {
+
+
+    .card-text {
+        font-size: 1.2rem;
+        margin-top: 10%;
+    }
+
+
+    .card-comment {
+        margin-top: 10%;
+    }
+}
+
+
+
+
 
 
