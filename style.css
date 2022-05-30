@@ -21,20 +21,30 @@ body {
 /* NAVBAR */
 
 
+
 .navbar-responsive {
     width: 100%;
-    height: 500px;
+    height: 45%;
     position: absolute;
-    background-color: #696b6aff;
+    background-image: url(./images/assets/bg01.jpg);
     color: rgb(255, 255, 255);
-    display: none;
+    display: block;
+    padding: 10%;
 }
 
+.display-none {
+    display: none;
+}
 
 .navbar-ul-responsive {
     margin: 15% 0% 0% 5%;
     font-size: 3rem;
     font-weight: bold;
+}
+
+.navbar-ul-responsive a {
+    text-decoration: none;
+    color: white;
 }
 
 .navbar-ul-responsive li {
@@ -103,6 +113,11 @@ body {
 
 .navbar-list-desktop {
     display: none;
+}
+
+.navbar-list-desktop a{
+    text-decoration: none;
+    color: white;
 }
 
 /* SPEECH */
@@ -389,6 +404,12 @@ body {
     text-align: justify;
     line-height: 1.3;
     text-align: center;
+}
+
+@media screen and (min-width: 720px) {
+    .navbar-responsive {
+        padding: 0%;
+    }
 }
 
 
